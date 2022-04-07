@@ -32,3 +32,15 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
+- script: |
+    flake8
+  displayName: 'flake8'
+
+- script: |
+    pytest --cov . --cov-report=xml:coverage.xml
+  displayName: 'coverage'
+
+- script: |
+    prospector
+  displayName: 'prospector'
