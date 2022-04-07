@@ -10,7 +10,7 @@ pytest --junit-xml=pytest_unit.xml -o junit_family=xunit1
 flake8 --output-file=flake8.log
 
 # run code coverage
-pytest --cov . --cov-report=html:coverage.html
+pytest --cov . --cov-report=xml:coverage.xml
 
 # run prospector
 prospector > prospector.log
