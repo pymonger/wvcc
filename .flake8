@@ -1,0 +1,7 @@
+[flake8]
+format = pylint
+exclude = .git,env,wvcc.egg-info,dist
+max-line-length = 159
+max-complexity = 3
+statistics = 1
+tee = 1

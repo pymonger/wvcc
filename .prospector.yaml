@@ -1,0 +1,25 @@
+output-format: pylint
+
+strictness: veryhigh
+doc-warnings: false
+test-warnings: true
+member-warnings: true
+autodetect: true
+
+ignore-paths:
+  - .git
+  - env
+  - dist
+  - wvcc.egg-info
+
+pylint:
+  options:
+    max-line-length: 159
+
+pycodestyle:
+  options:
+    max-line-length: 159
+
+mccabe:
+  options:
+    max-complexity: 3
